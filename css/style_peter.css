@@ -1,0 +1,24 @@
+#jillian .poem-text p{
+	margin-left: 13vw;
+	margin-top: 4vh;
+}
+
+
+
+#jillian {
+	background-color: #FFCAD4;
+	padding-bottom: 4vh;
+}
+#caroline p {
+	margin-left: 13vw;
+	margin-right: 13vw;
+}
+
+#caroline .text {
+	margin-top: 4vh;
+}
+
+#caroline {
+	background-color: #DAF7DC;
+}
+
