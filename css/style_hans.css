@@ -2,18 +2,19 @@
   background-color: rgb(192, 238, 231);
 }
 
-section {
-    height: auto;
-    min-height: 100vh;
-}
-
 .content {
-    padding-left: 100px;
+    padding: 10vh 10vw;
     padding-bottom: 50px;
+    background-color: lightblue;
 }
 
-.essay {
+#kel .content {
     padding-left: 0;
     width: 80%;
     margin: 0 auto;
+}
+
+/* Media Queries */
+@media (max-height: 600px) {
+
 }
