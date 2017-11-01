@@ -1,24 +1,31 @@
-#jillian .poem-text p{
+#poem .poem-text p{
 	margin-left: 13vw;
 	margin-top: 4vh;
 }
 
 
 
-#jillian {
+#poem {
 	background-color: #FFCAD4;
 	padding-bottom: 4vh;
 }
-#caroline p {
+#its-time p {
 	margin-left: 13vw;
 	margin-right: 13vw;
 }
 
-#caroline .text {
+#its-time .text {
 	margin-top: 4vh;
 }
 
-#caroline {
+#its-time {
 	background-color: #DAF7DC;
 }
 
+
+#comic img {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0 55px;
+}

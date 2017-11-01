@@ -1,7 +1,6 @@
-#credits {
-  background-color: rgb(193, 238, 192);
-}
-
-#credits h1 {
-  color: white;
+#toc ul,
+#credits ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
