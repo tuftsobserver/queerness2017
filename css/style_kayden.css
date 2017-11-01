@@ -1,4 +1,64 @@
-#toc ul,
+#cover img {
+  width: 100%;
+}
+
+#cover .title {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+#cover h1 {
+  color: #00aeef;
+  font-size: 20vmin;
+}
+
+#cover h2 {
+  color: #00aeef;
+  font-size: 8vmin;
+  text-transform: none;
+  padding-top: 5vmin;
+  text-decoration: underline;
+  text-decoration-color: #fff101;
+}
+
+#toc {
+  background-color: #f8f8f8;
+  background-image: url("../img/toc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#toc h1 {
+  color: #ed028c;
+  font-size: 20vw;
+}
+
+#toc ul {
+  list-style: none;
+  padding: 30px 15px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toc li {
+  padding: 10px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+#toc a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#toc a:hover {
+  text-decoration: underline;
+}
+
 #credits ul {
   list-style: none;
   margin: 0;

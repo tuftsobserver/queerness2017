@@ -41,9 +41,9 @@ h2 {
   text-align: center;
 }
 
-a {
+/*a {
   color: #b0262c;
-}
+}*/
 
 .italic {
   font-style: italic;
@@ -70,7 +70,7 @@ a {
 .no-touch #cd-vertical-nav {
   display: block;
   position: fixed;
-  right: 40px;
+  right: 20px;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
