@@ -1,3 +1,131 @@
-.content {
-    padding-left: 100px;
+/*.content-wrapper {
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+}*/
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#ledditor h1, h2, #figs h1, h2, #name h1, h2, #poverty h1, h2 {
+    text-align: left;
+}
+/***** Ledditor *****/
+#ledditor {
+    background: #202020;
+    color: white;
+}
+#ledditor .title {
+    display: block;
+    position: relative;
+    width: 20vw;
+    margin: 0 10vw;
+}
+#ledditor #photos {
+    display: block;
+    width: 20%;
+    background-color: red;
+}
+img {
+    width: 100%;
+}
+#ledditor #letter {
+    position: ;
+    display: block;
+    width: 70vw;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+/*.content-wrapper .text {
+    width: 70vw;
+}*/
+#ledditor .content {
+    width: 70vw;
+}
+
+/***** Poverty *****/
+#poverty .title-block {
+    display: block;
+    width: 325px;
+    margin: 10vh 0 5vh 5vw;
+}
+#background-box {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    z-index: 0;
+    border: 6px solid #fee94e;
+}
+#poverty #intro-image {
+    display: block;
+    width: 50vw;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+#text .sub-item {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.sub-item .sub-text {
+    width: 40vw;
+    left: 5vw;
+}
+.sub-item img {
+    width: 40vw;
+}
+
+/***** Figs *****/
+#figs {
+    background-color: #591f3b;
+    color: white;
+}
+
+/***** What's in a Name *****/
+#name {
+    background: #65bc9d;
+}
+#name .title-block {
+    margin-bottom: 5vh;
+}
+#name .header-image {
+    height: 500px;
+}
+#name .header-image img {
+    display: block;
+    height: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2.5% 0;
+}
+#name .header-image #top-image {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+#name .content-wrapper {
+    display: block;
+    width: 90%;
+    left: 10%;
+    padding: 5vh 10vw 5vh 5vw;
+    background-color: white;
+}
+
+
+/***** Media Queries *****/
+@media (max-width: 600px) {
+
 }
