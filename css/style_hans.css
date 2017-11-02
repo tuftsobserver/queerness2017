@@ -82,7 +82,7 @@ img {
 }
 .sub-item .sub-text {
     width: 40vw;
-    left: 5vw;
+    margin-left: 5vw;
 }
 .sub-item img {
     width: 40vw;
@@ -90,13 +90,51 @@ img {
 
 /***** Figs *****/
 #figs {
+    padding: 5vh 5vw;
     background-color: #591f3b;
     color: white;
+    height: 200%;
 }
-
+#figs .title-block {
+    margin-bottom: 5vh;
+}
+#figs .content {
+    position: relative;
+    z-index: 1;
+}
+#fig-text {
+    height: auto;
+}
+.fig-image, .fig-squiggle {
+    position: absolute;
+    right: 10vw;
+    z-index: 0;
+    width: 30vw;
+    min-width: 200px;
+    height: auto;
+}
+#fig-2 {
+    right: 25vw;
+}
+#fig-3{
+    right: 5vw;
+}
+.fig-squiggle {
+    z-index: 2;
+}
+#squiggle-1 {
+    right: 30vw;
+}
+#squiggle-2 {
+    right: 10vw;
+}
+#squiggle-3 {
+    left: 10vw;
+}
 /***** What's in a Name *****/
 #name {
     background: #65bc9d;
+    border-left: 10px solid white;
 }
 #name .title-block {
     margin-bottom: 5vh;
