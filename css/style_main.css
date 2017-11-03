@@ -83,6 +83,7 @@ h2 {
 
 .no-touch #cd-vertical-nav li {
   text-align: right;
+  margin-bottom: -3px;
 }
 
 .no-touch #cd-vertical-nav a {
