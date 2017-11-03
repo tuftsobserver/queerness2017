@@ -10,7 +10,7 @@
     width: 100%;
     height: auto;
 }
-#ledditor h1, h2, #figs h1, h2, #name h1, h2, #poverty h1, h2 {
+#ledditor h1, #ledditor h2, #figs h1, #figs h2, #name h1, #name h2, #poverty h1, #poverty h2 {
     text-align: left;
 }
 /***** Ledditor *****/

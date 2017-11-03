@@ -41,8 +41,8 @@ jQuery(document).ready(function($) {
         if (scrolled <= 0) {scrolled = 0};
         if (scrolled > (figs_height - fig_txt_height)) {scrolled = (figs_height - fig_txt_height)};
         $('#fig-text').css('top', (scrolled * .75) + 'px'); // Need to come up with test for this
-        $('#fig-1').css('top', (fig1_top - (scrolled * .25)) + 'px');
-        $('#fig-2').css('top', (fig2_top - (scrolled * .25)) + 'px');
+        $('#fig-1').css('top', (fig1_top - (scrolled * .3)) + 'px');
+        $('#fig-2').css('top', (fig2_top - (scrolled * .4)) + 'px');
         $('#fig-3').css('top', (fig3_top - (scrolled * .25)) + 'px');
         $('#squiggle-1').css('top', squig1_top + 'px');
         $('#squiggle-2').css('top', squig2_top + 'px');
