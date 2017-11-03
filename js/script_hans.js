@@ -40,12 +40,12 @@ jQuery(document).ready(function($) {
         var scrolled = ($(window).scrollTop() - fig_top);
         if (scrolled <= 0) {scrolled = 0};
         if (scrolled > (figs_height - fig_txt_height)) {scrolled = (figs_height - fig_txt_height)};
-        $('#fig-text').css('top', (scrolled * .75) + 'px'); // Need to come up with test for this
-        $('#fig-1').css('top', (fig1_top - (scrolled * .3)) + 'px');
-        $('#fig-2').css('top', (fig2_top - (scrolled * .4)) + 'px');
-        $('#fig-3').css('top', (fig3_top - (scrolled * .25)) + 'px');
-        $('#squiggle-1').css('top', squig1_top + 'px');
-        $('#squiggle-2').css('top', squig2_top + 'px');
-        $('#squiggle-3').css('top', squig3_top + 'px');
+        $('#fig-text').animate({top: (scrolled * .75) + 'px'}, 100); // Need to come up with test for this
+        $('#fig-1').animate({top: (fig1_top - (scrolled * .3)) + 'px'}, 100);
+        $('#fig-2').animate({top: (fig2_top - (scrolled * .4)) + 'px'}, 100);
+        $('#fig-3').animate({top: (fig3_top - (scrolled * .25)) + 'px'}, 100);
+        $('#squiggle-1').animate({top: squig1_top + 'px'}, 100);
+        $('#squiggle-2').animate({top: squig2_top + 'px'}, 100);
+        $('#squiggle-3').animate({top: squig3_top + 'px'}, 100);
     }
 })
