@@ -15,44 +15,71 @@
 }
 /***** Ledditor *****/
 #ledditor {
+    position: relative;
     background: #202020;
     color: white;
+    overflow: hidden;
 }
-#ledditor .title {
-    display: block;
-    position: relative;
-    width: 20vw;
-    margin: 0 10vw;
+#ledditor .content-wrapper, #ledditor .title-block {
+    padding: 5vh 0;
+    width: 70vw;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-#ledditor #photos {
-    display: block;
-    width: 20%;
-    background-color: red;
+#ledditor-photos {
+    position: absolute;
+    width: 30%;
+    max-width: 500px;
 }
-#ledditor img {
+#ledditor-photos img {
+    margin: 2vh 0;
+}
+#ledditor img, #figs img, #name img, #poverty img {
     width: 100%;
 }
 #ledditor #letter {
-    position: ;
-    display: block;
-    width: 70vw;
-    height: 100%;
+    position: absolute;
+    width: 60%;
     right: 0;
-    top: 0;
 }
-
-/*.content-wrapper .text {
-    width: 70vw;
-}*/
+#ledditor #signatures img {
+    width: 20vw;
+    max-width: 400px;
+    min-width: 150px;
+    height: auto;
+}
+#ledditor #sig-1 {
+    position: relative;
+    top: 20px;
+}
+#ledditor #sig-2 {
+    position: relative;
+    left: 20vw;
+    top: -30px;
+}
+#ledditor #sig-3 {
+    position: relative;
+    left: 5vw;
+    top: -50px;
+}
+#ledditor #sig-4 {
+    position: relative;
+    left: 25vw;
+    top: -100px;
+}
 #ledditor .content {
     width: 70vw;
 }
 
 /***** Poverty *****/
 #poverty .title-block {
-    display: block;
+    position: absolute;
+    right: 10vw;
     width: 325px;
     margin: 10vh 0 5vh 5vw;
+    z-index: 2;
+}
+#poverty {
 }
 #background-box {
     width: 80%;
@@ -63,29 +90,20 @@
     z-index: 0;
     border: 6px solid #fee94e;
 }
-#poverty #intro-image {
-    display: block;
-    width: 50vw;
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: 0;
-}
-#text .sub-item {
+#text .sub-text {
     position: relative;
     z-index: 2;
-
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: space-around;
-    align-items: center;
+    width: 35vw;
+    max-width: 500px;
+    background-color: white;
+    padding: 10px;
+    height: auto;
 }
-.sub-item .sub-text {
-    width: 40vw;
-    margin-left: 5vw;
+.sub-text #sub-1 {
+    left: 10vw;
 }
-.sub-item img {
-    width: 40vw;
+.sub-text #sub-2  {
+    right: 0;
 }
 
 /***** Figs *****/
@@ -111,6 +129,7 @@
     z-index: 0;
     width: 30vw;
     min-width: 200px;
+    max-width: 500px;
     height: auto;
 }
 #fig-2 {
@@ -147,23 +166,65 @@
     height: auto;
     max-width: 500px;
     margin: 0 auto;
-    padding: 2.5% 0;
+    padding: 5vh 0;
 }
 #name .header-image #top-image {
+    transform: rotate(180deg);
     -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
 }
 #name .content-wrapper {
     display: block;
     width: 90%;
     left: 10%;
-    padding: 5vh 10vw 5vh 5vw;
+    padding: 5vh 10vw 10vh 5vw;
     background-color: white;
 }
-
+#name .content {
+    width: 60vw;
+    margin: 0 auto;
+}
 
 /***** Media Queries *****/
 @media (max-width: 600px) {
 
+    #ledditor-photos {
+        display: none;
+    }
+    #ledditor #letter {
+        position: absolute;
+        width: 100%;
+        right: 0;
+    }
+    #ledditor #sig-1 {
+        position: relative;
+        top: -20px;
+    }
+    #ledditor #sig-2 {
+        position: relative;
+        left: 20vw;
+        top: -30px;
+    }
+    #ledditor #sig-3 {
+        position: relative;
+        left: 5vw;
+        top: -50px;
+    }
+    #ledditor #sig-4 {
+        position: relative;
+        left: 25vw;
+        top: -70px;
+    }
+    #fig-1 {
+        right: -10vw;
+    }
+    #fig-2 {
+        right: -5vw;
+    }
+    #fig-3 {
+        right: -15vw;
+    }
+    .fig-squiggle {
+        opacity: .6;
+    }
 }
