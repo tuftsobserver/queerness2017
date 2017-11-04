@@ -23,6 +23,9 @@
   text-decoration-color: #fff101;
 }
 
+/********** COVER **********/
+/********** TOC **********/
+
 #toc {
   background-color: #f8f8f8;
   background-image: url("../img/toc.jpg");
@@ -58,6 +61,107 @@
 #toc a:hover {
   text-decoration: underline;
 }
+
+/********** TOC **********/
+/********** OFF-WHITE **********/
+
+#off-white .container {
+  max-width: 800px;
+  text-align: right;
+  padding: 30px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#off-white h1 {
+  text-align: left;
+  /*font-size: 70px;*/
+}
+
+#off-white h2 {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+#off-white .inner-text {
+  text-align: left;
+}
+
+#off-white img {
+  max-width: 50%;
+}
+
+/********** OFF-WHITE **********/
+/********** queer-studies **********/
+
+#queer-studies {
+  background-color: #231f20;
+  color: white;
+  padding: 50px 15px;
+}
+
+#queer-studies h2 {
+  text-transform: none;
+}
+
+#queer-studies img {
+  width: 100%;
+}
+
+#queer-studies p {
+  margin: 0;
+}
+
+#queer-studies .row {
+  padding-top: 50px;
+}
+
+#queer-studies .descr {
+  border-left: white solid 1px;
+  padding: 10px;
+}
+
+#queer-studies .intro {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+#queer-studies .container {
+  padding-bottom: 30px;
+  border-bottom: 1px white solid;
+}
+
+/********** queer-studies **********/
+
+#holidays {
+  background-color: black;
+  border: 10px solid pink;
+  color: #a0c5d9;
+}
+
+#holidays .banner {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/holidays2.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+}
+
+#holidays .inner-text {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+#holidays p {
+  margin-bottom: 20px;
+}
+
+/********** CREDITS **********/
 
 #credits ul {
   list-style: none;
