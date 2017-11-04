@@ -73,9 +73,13 @@
 
 /***** Poverty *****/
 #poverty .title-block {
-    display: block;
+    position: absolute;
+    right: 10vw;
     width: 325px;
     margin: 10vh 0 5vh 5vw;
+    z-index: 2;
+}
+#poverty {
 }
 #background-box {
     width: 80%;
@@ -86,29 +90,20 @@
     z-index: 0;
     border: 6px solid #fee94e;
 }
-#poverty #intro-image {
-    display: block;
-    width: 50vw;
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: 0;
-}
-#text .sub-item {
+#text .sub-text {
     position: relative;
     z-index: 2;
-
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: space-around;
-    align-items: center;
+    width: 35vw;
+    max-width: 500px;
+    background-color: white;
+    padding: 10px;
+    height: auto;
 }
-.sub-item .sub-text {
-    width: 40vw;
-    margin-left: 5vw;
+.sub-text #sub-1 {
+    left: 10vw;
 }
-.sub-item img {
-    width: 40vw;
+.sub-text #sub-2  {
+    right: 0;
 }
 
 /***** Figs *****/
@@ -203,22 +198,22 @@
     }
     #ledditor #sig-1 {
         position: relative;
-        top: 20px;
+        top: -20px;
     }
     #ledditor #sig-2 {
         position: relative;
         left: 20vw;
-        top: 8px;
+        top: -30px;
     }
     #ledditor #sig-3 {
         position: relative;
         left: 5vw;
-        top: -5px;
+        top: -50px;
     }
     #ledditor #sig-4 {
         position: relative;
         left: 25vw;
-        top: -10px;
+        top: -70px;
     }
     #fig-1 {
         right: -10vw;

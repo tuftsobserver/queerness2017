@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 // Potentially create window resize event that retriggers top positioning
 
     // Ledditor layout
-    $('#ledditor').css('height', $('#letter').height() * 1.25);
+    $('#ledditor').css('height', $('#letter').height() * 1.2);
 
     // Figs Parallax layout
     var fig_top = ($('#figs').offset()).top;
