@@ -29,7 +29,7 @@
     width: 20%;
     background-color: red;
 }
-#ledditor img {
+#ledditor img, #figs img, #name img, #poverty img {
     width: 100%;
 }
 #ledditor #letter {
@@ -111,6 +111,7 @@
     z-index: 0;
     width: 30vw;
     min-width: 200px;
+    max-width: 500px;
     height: auto;
 }
 #fig-2 {
@@ -147,23 +148,37 @@
     height: auto;
     max-width: 500px;
     margin: 0 auto;
-    padding: 2.5% 0;
+    padding: 5vh 0;
 }
 #name .header-image #top-image {
+    transform: rotate(180deg);
     -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
 }
 #name .content-wrapper {
     display: block;
     width: 90%;
     left: 10%;
-    padding: 5vh 10vw 5vh 5vw;
+    padding: 5vh 10vw 10vh 5vw;
     background-color: white;
 }
-
+#name .content {
+    width: 60vw;
+    margin: 0 auto;
+}
 
 /***** Media Queries *****/
 @media (max-width: 600px) {
-
+    #fig-1 {
+        right: -10vw;
+    }
+    #fig-2 {
+        right: -5vw;
+    }
+    #fig-3 {
+        right: -15vw;
+    }
+    .fig-squiggle {
+        opacity: .6;
+    }
 }
