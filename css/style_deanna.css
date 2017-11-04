@@ -1,5 +1,5 @@
 #nina-img {
-	width: 100vw;
+	width: 100%;
 }
 
 #nina-container {
@@ -46,7 +46,7 @@
 	position: absolute;
 	top: 12vh;
 	margin: 0 auto;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 
 }
@@ -107,8 +107,6 @@
 	/*	margin-left: 10vw;
 		margin-bottom: 0;*/
 		vertical-align: top;
-	}	
+	}
 
 }
-
-
