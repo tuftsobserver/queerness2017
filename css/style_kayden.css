@@ -134,11 +134,13 @@
 }
 
 /********** queer-studies **********/
+/********** holidays **********/
 
 #holidays {
   background-color: black;
   border: 10px solid pink;
   color: #a0c5d9;
+  text-align: center;
 }
 
 #holidays .banner {
@@ -158,8 +160,114 @@
 }
 
 #holidays p {
+  display: inline-block;
+  text-align: left;
+}
+
+/********** holidays **********/
+/********** untitled **********/
+
+#untitled .inner-text {
+  display: inline-block;
+}
+
+#untitled h2 {
+  font-size: 30px;
+  margin: 50px 0;
+  text-align: left;
+}
+
+#untitled {
+  text-align: center;
+  background-image: url(../img/untitled.jpeg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: none;
+}
+
+#untitled p {
+  display: inline-block;
+  text-align: left;
+}
+
+/********** untitled **********/
+/********** tactile **********/
+
+#tactile-relief {
+  text-align: center;
+  padding: 50px 15px;
+}
+
+#tactile-relief .inner-text {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+#tactile-relief p {
+  display: inline-block;
+  text-align: left;
+}
+
+#tactile-relief img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+#tactile-relief .flower {
+  height: 100px;
+}
+
+#tactile-relief h1 {
+  font-size: 80px;
+}
+
+#tactile-relief h2 {
+  font-size: 40px;
   margin-bottom: 20px;
 }
+
+/********** tactile **********/
+/********** addendum **********/
+
+#addendum {
+  background-image: url(../img/fabric.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 50px;
+}
+
+#addendum h1,
+#addendum h2 {
+  color: white;
+}
+
+#addendum .inner-text {
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#addendum .right {
+  text-align: right;
+}
+
+#addendum p {
+  display: inline-block;
+  text-align: left;
+
+  background-color: #efcdd2;
+  border: 20px white solid;
+  padding: 20px;
+
+  max-width: 700px;
+  /*clear: left;*/
+}
+
+/*#addendum .left*/
+
+
+/********** addendum **********/
+
 
 /********** CREDITS **********/
 
