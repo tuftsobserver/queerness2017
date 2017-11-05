@@ -35,17 +35,35 @@ jQuery(document).ready(function($) {
     $('#squiggle-2').css('top', squig2_top);
     $('#squiggle-3').css('top', squig3_top);
 
+
+    // Poverty Layout
+    var height_1 = $('#sub-1').height();
+    var height_2 = $('#sub-2').height();
+    var height_3 = $('#sub-3').height();
+    var height_4 = $('#sub-4').height();
+    // var poverty_height = (height_1 + height_2 + height_3 + height_4);
+    // $('#poverty').css('height', poverty_height);
+    var poverty_height = $('#poverty').css('height');
+    var poverty_top = ($('#poverty').offset()).top;
+
+    var poverty_1_top = height_1 + (height_2 / 1.6) - $('#poverty-1').height();
+    $('#poverty-1').css('top', poverty_1_top);
+    var poverty_2_top = poverty_1_top + (height_3 * 1.4);
+    $('#poverty-2').css('top', poverty_2_top);
+    var poverty_3_top = poverty_2_top + height_4;
+    $('#poverty-3').css('top', poverty_3_top);
+
     // What's In a Name? Layout
     var name_top = ($('#name').offset()).top;
 
     var name_height = $('#name').height();
     console.log(name_height);
 
-    //console.log(fig1_top);
-
     $(window).bind('scroll',function(e){
         parallaxScroll();
     });
+
+
     function parallaxScroll() {
         var scrolled = ($(window).scrollTop() - fig_top - 200);
         if (scrolled <= 0) {scrolled = 0};
@@ -58,5 +76,13 @@ jQuery(document).ready(function($) {
         $('#squiggle-1').animate({top: squig1_top - (scrolled * .15) + 'px'}, 1);
         $('#squiggle-2').animate({top: squig2_top + 'px'}, 1);
         $('#squiggle-3').animate({top: squig3_top - (scrolled * .1)+ 'px'}, 1);
+
+        var scrolled_poverty = Math.round(($(window).scrollTop() - poverty_top) - 200);
+        if (scrolled_poverty <= 0) {scrolled_poverty = 0};
+        if (scrolled_poverty > (poverty_height - height_4)) {scrolled_poverty = (poverty_height - height_4)};
+        console.log(scrolled_poverty);
+        $('#poverty-1').animate({top: (poverty_1_top - (scrolled_poverty * .15)) + 'px'}, 1);
+        $('#poverty-2').animate({top: (poverty_2_top - (scrolled_poverty * .2)) + 'px'}, 1);
+        $('#poverty-3').animate({top: (poverty_3_top - (scrolled_poverty * .12)) + 'px'}, 1);
     }
 })

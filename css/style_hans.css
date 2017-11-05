@@ -54,17 +54,17 @@
 }
 #ledditor #sig-2 {
     position: relative;
-    left: 20vw;
+    left: 320px;
     top: -30px;
 }
 #ledditor #sig-3 {
     position: relative;
-    left: 5vw;
+    left: 70px;
     top: -50px;
 }
 #ledditor #sig-4 {
     position: relative;
-    left: 25vw;
+    left: 360px;
     top: -100px;
 }
 #ledditor .content {
@@ -79,15 +79,13 @@
     margin: 10vh 0 5vh 5vw;
     z-index: 2;
 }
-#poverty {
-}
 #background-box {
     width: 80%;
-    height: 90%;
+    height: 85%;
     position: absolute;
     top: 5%;
-    left: 10%;
-    z-index: 0;
+    left: -10%;
+    z-index: 1;
     border: 6px solid #fee94e;
 }
 #text .sub-text {
@@ -96,13 +94,36 @@
     width: 35vw;
     max-width: 500px;
     background-color: white;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     height: auto;
 }
-.sub-text #sub-1 {
-    left: 10vw;
+#sub-1 {
+    position: absolute;
+    left: 10%;
+    top: 10vh;
 }
-.sub-text #sub-2  {
+#sub-2  {
+    position: absolute;
+    left: 50%;
+    top: -20vh;
+}
+#sub-3 {
+    position: absolute;
+    left: 10%;
+    top: -40vh;
+}
+#sub-4 {
+    position: absolute;
+    left: 50%;
+    top: -60vh;
+}
+.poverty-img {
+    position: absolute;
+    top: 0;
+    height: 60vh;
+    max-height: 800px;
+}
+#poverty-2 {
     right: 0;
 }
 
@@ -214,6 +235,15 @@
         position: relative;
         left: 25vw;
         top: -70px;
+    }
+    #poverty .sub-text {
+        width: 80%;
+        top: 500px;
+        margin: 0 auto;
+    }
+    #sub-1, #sub-2, #sub-3, #sub-4 {
+        left: 0;
+        right: 0;
     }
     #fig-1 {
         right: -10vw;
