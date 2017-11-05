@@ -10,7 +10,6 @@
 	#poem .body-bg {
 		display: none;
 		position: absolute;
-		
 		margin-top: 280%;
 		margin-left: 0;
 	}
@@ -29,7 +28,7 @@
 
 	#poem .poem-body p{
 		position: relative;
-		margin-left: 13vw;
+		margin: 15px;
 	}
 	#poem .poem-title {
 		width: 100%;
@@ -53,7 +52,7 @@
 		width: 80%;
 		margin-left: 10%;
 	}
-	
+
 }
 
 @media (min-width: 451px) {
@@ -101,7 +100,7 @@
 	#poem .grey{
 		background-color: rgba(239, 240, 240, 0.7);
 	}
-	
+
 }
 
 
@@ -182,7 +181,7 @@
 
 	#its-time .text {
 		width: 65%;
-		
+
 		margin-top: 8vh;
 		margin-left: 10%;
 		padding-right: 10%;
@@ -248,7 +247,7 @@
 	    background-image: url("../img/staff-project-2.jpg");
 
 	    /* Full height */
-	    height: 100%; 
+	    height: 100%;
 
 	    /* Create the parallax scrolling effect */
 	    background-attachment: fixed;
@@ -358,7 +357,7 @@
 }
 
 @media (max-width: 450px) {
-	
+
 	#art {
 		background: url("../img/art-bg-m.png") no-repeat;
 		background-size: 120%;

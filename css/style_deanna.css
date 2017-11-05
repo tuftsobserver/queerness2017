@@ -1,5 +1,6 @@
 #nina-img {
 	width: 100%;
+	display: block;
 }
 
 #nina-container {
@@ -17,63 +18,60 @@
 }
 
 
+#b7517 {
+	background: #ffe8ce;
+	text-align: center;
+}
+
 
 .b7517-p {
-	margin-bottom: 3vh;
+	margin-bottom: 15px;
+	text-align: left;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .b7517-title {
 	color: black;
 	background: rgba(255, 255, 255, 0.6);
 	margin: 0 auto;
-	margin-bottom: 2vh;
-	font-size: 8vw;
-	width: 30vw;
-	/*text-align: center;*/
+	font-size: 60px;
+	width: 240px;
 	z-index: 100;
 }
 
-#b7517-title-container {
-	position: relative;
-	height: auto;
-	bottom: -2vh;
-	margin: 0 auto;
-	background: #ffe8ce;
-	/*border: 1px solid red;*/
-}
-
 #b7517-header {
-	position: absolute;
-	top: 12vh;
 	margin: 0 auto;
 	width: 100%;
-	height: auto;
+	height: 400px;
+	background-image: url(../img/britt1.png);
+	background-size: cover;
+}
 
+#b7517 .vertically-center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #b7517-container {
-	/*border: 1px solid blue;*/
-	/*width: 90vw;*/
-	/*margin-left: 5vw;*/
-	padding-top: 5vh;
-	padding-bottom: 3vh;
-	padding-left:5vw;
-	font-size: 1.2vw;
-	background: #ffe8ce;
-
+	display: inline-block;
+	margin: 0 auto;
+	width: auto;
+	font-size: 16px;
 }
 
 .b7517-col{
-	width: 18vw;
+	width: 30%;
 	display: inline-block;
-	margin-left: 10vw;
-	margin-bottom: 0;
+	margin: 0 auto;
 	vertical-align: top;
 }
 
 .b7517-img {
 	width: 100%;
-	/*height: 100%;*/
+	display: block;
 }
 
 @media (max-width: 800px){
@@ -83,29 +81,14 @@
 		text-align: center;
 		padding-left: 10vw;
 		padding-top: 50vh;
-		/*margin-left: 0;*/
-		/*position: absolute;*/
 		z-index: 100;
 		top: 0;
-		/*left: 50vw;/*/
-	}
-
-	#b7517-header {
-		position: absolute;
-		top: 5vh;
-		margin: 0 auto;
-		width: 100vw;
-		height: auto;
-
 	}
 
 	.b7517-col{
-		width: 50vw;
+		width: 100%;
 		display: block;
-		margin: 0 auto;
-		padding-left: 10vw;
-	/*	margin-left: 10vw;
-		margin-bottom: 0;*/
+		margin: 15px auto;
 		vertical-align: top;
 	}
 
