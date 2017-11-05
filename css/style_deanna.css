@@ -8,13 +8,12 @@
 }
 
 #nina-text {
-	color: #f7b46c;
-	font-size: 5vw;
-	text-align: left;
-	margin-left: 5vw;
+	color: white;
+	font-size: 20px;
 	position: absolute;
 	z-index: 100;
-	top: 100vh;
+	bottom: 0;
+	padding: 10px;
 }
 
 
@@ -76,13 +75,13 @@
 
 @media (max-width: 800px){
 	#nina-text {
-		color: #f7b46c;
-		font-size: 5vw;
+		color: white;
+		font-size: 20px;
 		text-align: center;
-		padding-left: 10vw;
-		padding-top: 50vh;
+		/*padding-left: 10vw;
+		padding-top: 50vh;*/
 		z-index: 100;
-		top: 0;
+		bottom: 0;
 	}
 
 	.b7517-col{
