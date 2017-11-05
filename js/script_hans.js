@@ -2,12 +2,6 @@ jQuery(document).ready(function($) {
     $(window).bind('scroll',function(e){
         parallaxScroll();
     });
-    // Put all variables in a $(window).resize(function() {
-
-
-    // });
-
-// Potentially create window resize event that retriggers top positioning
 
     // Ledditor layout
     $('#ledditor').css('height', $('#letter').height() * 1.17);
@@ -17,7 +11,6 @@ jQuery(document).ready(function($) {
     var height_2 = $('#sub-2').height();
     var height_3 = $('#sub-3').height();
     var height_4 = $('#sub-4').height();
-    console.log($('#poverty-title').height())
     var poverty_height = (height_1 + height_2 + height_3 + height_4 + $('#poverty-title').height()) *.9;
     if ($(window).width() <= 600) {poverty_height = poverty_height * 1.175};
     $('#poverty').css('height', poverty_height);
