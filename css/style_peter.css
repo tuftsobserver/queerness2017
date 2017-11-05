@@ -1,28 +1,516 @@
-#poem .poem-text p{
-	margin-left: 13vw;
-	margin-top: 4vh;
+
+@media (max-width: 450px) {
+
+	#poem {
+		background-color: #eff0f0;
+		padding-top: 2vh;
+		padding-bottom: 4vh;
+	}
+
+	#poem .body-bg {
+		display: none;
+		position: absolute;
+		
+		margin-top: 280%;
+		margin-left: 0;
+	}
+
+	#poem .title-bg {
+		margin-top: 2%;
+		position: absolute;
+		z-index: 0;
+		width: 94%;
+		height: 45%;
+	}
+
+	#poem .grey{
+		background-color: rgba(239, 240, 240, 0.75);
+	}
+
+	#poem .poem-body p{
+		position: relative;
+		margin-left: 13vw;
+	}
+	#poem .poem-title {
+		width: 100%;
+		position: relative;
+	}
+
+	#poem .poem-title h1{
+		font-size: 7vh;
+	}
+
+
+	#poem .poem-title h2 {
+		padding-top: 3%;
+		font-size: 5vh;
+	}
+	#poem .poem-body {
+		/*padding-bottom: 10%;*/
+	}
+
+	#poem .mobile-bg {
+		width: 80%;
+		margin-left: 10%;
+	}
+	
+}
+
+@media (min-width: 451px) {
+
+	#poem .mobile-bg {
+		display: none;
+	}
+	#poem .poem-body p{
+		position: relative;
+		margin-left: 13vw;
+		margin-top: 4vh;
+	}
+
+	#poem .poem-body {
+		margin-top: 13vh;
+	}
+	#poem .poem-title {
+		position: relative;
+	}
+
+	#poem {
+		background-color: #eff0f0;
+		padding-top: 2vh;
+		padding-bottom: 4vh;
+	}
+
+	#poem .title-bg {
+		margin-top: 1%;
+		position: absolute;
+		z-index: 0;
+		width: 94%;
+		height: 70%;
+	}
+
+	#poem .body-bg {
+		width: 60%;
+		float: right;
+		position: absolute;
+		z-index: 0;
+		margin-left: 35%;
+		margin-top: 50%;
+
+	}
+
+	#poem .grey{
+		background-color: rgba(239, 240, 240, 0.7);
+	}
+	
 }
 
 
+/*****************************/
 
-#poem {
-	background-color: #FFCAD4;
-	padding-bottom: 4vh;
-}
-#its-time p {
-	margin-left: 13vw;
-	margin-right: 13vw;
-}
-
-#its-time .text {
-	margin-top: 4vh;
+#its-time .title {
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+	color: white;
+	background-color: #000;
 }
 
-#its-time {
-	background-color: #DAF7DC;
+@media (min-width: 451px) and (max-width: 900px) {
+	#its-time .text {
+		width: 65%;
+		margin-top: 8vh;
+		margin-left: 10%;
+		padding-right: 10%;
+	}
+
+	#its-time .calendars {
+		float: right;
+		width: 35%;
+		margin-right: 10vw;
+		padding-left: 10vw;
+		margin-top: 10vh;
+	}
+
+	#its-time #calendar2 {
+		margin-left: 3vw;
+		margin-top: -5vh;
+		-ms-transform: rotate(-13deg); /* IE 9 */
+    	-webkit-transform: rotate(-13deg); /* Chrome, Safari, Opera */
+    	transform: rotate(-13deg);
+	}
+	#its-time #calendar3 {
+		margin-top: -20vh;
+		-ms-transform: rotate(13deg); /* IE 9 */
+    	-webkit-transform: rotate(13deg); /* Chrome, Safari, Opera */
+    	transform: rotate(13deg);
+	}
+	#its-time #calendar4 {
+		display: none;
+	}
+	#its-time .right-side {
+		width: 100%;
+	}
+}
+
+@media (min-width: 901px) {
+	#its-time .calendars {
+		float: right;
+		width: 20%;
+		margin-right: 10vw;
+		margin-top: 10vh;
+	}
+
+
+	#its-time #calendar2 {
+		margin-left: 3vw;
+		margin-top: -5vh;
+		-ms-transform: rotate(-13deg); /* IE 9 */
+    	-webkit-transform: rotate(-13deg); /* Chrome, Safari, Opera */
+    	transform: rotate(-13deg);
+	}
+	#its-time #calendar3 {
+		margin-top: -20vh;
+		-ms-transform: rotate(13deg); /* IE 9 */
+    	-webkit-transform: rotate(13deg); /* Chrome, Safari, Opera */
+    	transform: rotate(13deg);
+	}
+	#its-time #calendar4 {
+		display: none;
+	}
+	#its-time .right-side {
+		width: 90%;
+	}
+
+	#its-time .text {
+		width: 65%;
+		
+		margin-top: 8vh;
+		margin-left: 10%;
+		padding-right: 10%;
+	}
 }
 
 
+@media (max-width: 450px) {
+	#its-time .text {
+		background-color: rgba(255, 255, 255, 0.65);
+		margin-top: 4vh;
+		margin-left: 10%;
+		margin-right: 10%;
+		position: relative;
+		padding-bottom: 2vh;
+	}
+
+	#its-time .calendars {
+		position: absolute;
+		z-index: 0;
+		/*margin-left: 10%;*/
+	}
+	#its-time #calendar1 {
+		margin-top: 4vh;
+		width: 70%;
+	}
+	#its-time #calendar2 {
+		float: right;
+		margin-top: 20vh;
+		/*margin-right: 10vw;*/
+		width: 70%;
+	}
+
+	#its-time #calendar3 {
+		float: left;
+		width: 50%;
+		margin-top: 20vh;
+	}
+
+	#its-time #calendar4 {
+		float: right;
+		width: 70%;
+		margin-top: 13vh;
+	}
+}
+
+/*****************************/
+@media (min-width: 451px) {
+	#staff-project {
+		/*height: 300%;*/
+		/*border: 1px solid red;*/
+		/*padding-bottom: 50vh;*/
+	}
+
+	#staff-project .bg img{
+		display: none;
+	}
+
+	#staff-project .text {
+		color: white;
+
+		/* The image used */
+	    background-image: url("../img/staff-project-2.jpg");
+
+	    /* Full height */
+	    height: 100%; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	#staff-project .title {
+		padding-top: 4%;
+	}
+
+
+	#staff-project .byline {
+		font-style: italic;
+		margin-top: 1%;
+		margin-left: 45%;
+	}
+
+	#staff-project .responses {
+		column-count: 2;
+		column-gap: 10vw;
+		width: 80%;
+		/*margin-top: 2%;*/
+		margin-left: 10%;
+		margin-right: 10%;
+		padding-top: 3%;
+		padding-bottom: 5%;
+	}
+
+	#staff-project .responses p {
+		padding-bottom: 2%;
+	}
+
+}
+@media (max-width: 450px) {
+	#staff-project .bg {
+		display: none;
+	}
+	#staff-project {
+		background:url(../img/staff-project-1.jpg) no-repeat, url(../img/staff-project-2.jpg) 600px repeat;
+		background-size: 100%, 200%;
+		color: white;
+	}
+
+	#staff-project .title {
+		padding-top: 75%;
+		padding-bottom: 40%;
+		width: 90%;
+	}
+
+	#staff-project .byline {
+		font-size: 4vh;
+	}
+	#staff-project .title h1 {
+		font-size: 5vh;
+	}
+	#staff-project .responses {
+		margin-left: 10%;
+		margin-right: 10%;
+		padding-bottom: 10%;
+	}
+
+	#staff-project .responses p{
+		padding-bottom: 5px;
+	}
+
+	#staff-project .byline {
+		margin-left: 32%;
+		padding-top: 4vh;
+		font-style: italic;
+	}
+}
+
+/**********************/
+@media (min-width: 451px) {
+	#art {
+		padding-bottom: 10vh;
+	}
+
+	#art .art-pictures {
+		background: url("../img/art-bg-d.png") no-repeat;
+		background-size: 100%;
+	}
+	#art img {
+		width: 60%;
+	}
+
+	#art #art1 {
+
+		width: 50%;
+		margin-top: 5%;
+		margin-left: 25%;
+	}
+
+	#art #art2 {
+		margin-top: -20%;
+		margin-left: 5%;
+		width: 35%;
+
+	}
+	#art #art3 {
+		margin-top: 30%;
+		margin-left: 10%;
+		width: 40%;
+	}
+}
+
+@media (max-width: 450px) {
+	
+	#art {
+		background: url("../img/art-bg-m.png") no-repeat;
+		background-size: 120%;
+	}
+
+	#art img {
+		width: 80%;
+	}
+
+	#art #art1 {
+		margin-top: 7%;
+		margin-left: 5%;
+		width: 85%;
+	}
+
+	#art #art2 {
+		float: right;
+		margin-top: 9%;
+		margin-right: 3%;
+	}
+
+	#art #art3 {
+		margin-top: 4%;
+		margin-left: 8%;
+		padding-bottom: 10%;
+	}
+}
+
+
+/**********************/
+@media (min-width:451px) {
+	#inset img {
+		width: 50%;
+	}
+
+	#inset #text1 {
+		margin-left: 25%;
+	}
+
+	#inset .photo-overlays {
+		position: absolute;
+		z-index: 2;
+		opacity: 0.6;
+	}
+	#inset .photo-group-1 {
+
+		z-index: 0;
+		position: relative;
+	}
+
+	#inset #tri-1 {
+		display: block;
+		margin-top: 10%;
+		width: 45%;
+		height: 25%;
+	}
+
+	#inset #tri-2 {
+		margin-top: 23%;
+		width: 33%;
+		display: block;
+	}
+
+	#inset #tri-3 {
+		float: right;
+		margin-top: -3%;
+		width: 23%;
+	}
+	#inset #photo1 {
+		width: 30%;
+		margin-left: 15%;
+	}
+
+	#inset #photo2 {
+		margin-left: 7%;
+		width: 40%;
+	}
+
+	#inset #photo3 {
+		margin-top: 5%;
+		margin-left: 18%;
+	}
+
+	#inset #photo4 {
+		width: 35%;
+		margin-top: 4%;
+		margin-left: 15%;
+	}
+
+	#inset #photo5 {
+		width: 40%;
+		margin-top: 4%;
+		margin-left: 5%;
+	}
+
+	#inset #photo6 {
+		display: block;
+		margin-top: 6%;
+		margin-right: 11%;
+		width: 55%;
+		float: right;
+	}
+
+	#inset #photo7 {
+		/*display: inline-block;*/
+		margin-left: 18%;
+		width: 25%;
+	}
+
+	#inset #photo8 {
+		/*display: inline-block;*/
+		margin-left: 6%;
+		width: 30%;
+	}
+
+	#inset .photo-group-2 {
+		margin-top: 10%;
+		padding-bottom: 10%;
+	}
+}
+@media (max-width: 450px) {
+	#inset img {
+		width: 100%;
+	}
+
+	#inset .photo-overlays {
+		position: absolute;
+		z-index: 2;
+		opacity: 0.6;
+	}
+	#inset .photo-group-1 {
+		z-index: 0;
+		position: relative;
+	}
+
+	#inset #tri-1 {
+		margin-top: 120%;
+		width: 50%;
+	}
+
+	#inset #tri-2 {
+		margin-top: 50%;
+		width: 50%;
+	}
+
+	#inset #tri-3 {
+		margin-top: 182%;
+		float: right;
+		width: 24%;
+	}
+}
+/**********************/
 #comic img {
   box-sizing: border-box;
   width: 100%;
