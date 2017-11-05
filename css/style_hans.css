@@ -21,15 +21,18 @@
     position: relative;
     background: #202020;
     color: white;
-    overflow: hidden;
-    top: -8vh;
+    /*overflow: hidden;*/
+    /*padding: 5vh 0;*/
 }
-#ledditor .content-wrapper, #ledditor .title-block {
-    padding: 5vh 0;
+
+#ledditor .content-wrapper,
+#ledditor .title-block {
+    padding: 0;
     width: 70vw;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 #ledditor-photos {
     position: absolute;
     width: 30%;
@@ -46,13 +49,19 @@
     width: 60%;
     right: 0;
 }
-#ledditor #signatures img {
+
+#ledditor .sigs {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+}
+/*#ledditor #signatures img {
     width: 20vw;
     max-width: 400px;
     min-width: 150px;
     height: auto;
-}
-#ledditor #sig-1 {
+}*/
+/*#ledditor #sig-1 {
     position: relative;
     top: 20px;
 }
@@ -70,7 +79,8 @@
     position: relative;
     left: 360px;
     top: -150px;
-}
+}*/
+
 #ledditor .content {
     width: 70vw;
 }
@@ -206,7 +216,7 @@
     position: relative;
     z-index: 0;
     width: 90%;
-    left: 10%;
+    /*left: 10%;*/
     padding: 5vh 10vw 10vh 5vw;
     background-color: white;
 }
@@ -263,7 +273,7 @@
         width: 100%;
         right: 0;
     }
-    #ledditor #sig-1 {
+    /*#ledditor #sig-1 {
         position: relative;
         top: -20px;
     }
@@ -281,7 +291,7 @@
         position: relative;
         left: 25vw;
         top: -110px;
-    }
+    }*/
     #poverty .sub-text {
         width: 100%;
         top: 500px;
@@ -296,13 +306,13 @@
         right: 0;
     }
     #fig-1 {
-        right: -10vw;
+        right: 5vw;
     }
     #fig-2 {
-        right: -5vw;
+        right: 5vw;
     }
     #fig-3 {
-        right: -15vw;
+        right: 5vw;
     }
     .fig-squiggle {
         opacity: .6;
