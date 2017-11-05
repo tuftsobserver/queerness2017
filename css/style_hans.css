@@ -13,12 +13,16 @@
 #ledditor h1, #ledditor h2, #figs h1, #figs h2, #name h1, #name h2, #poverty h1, #poverty h2 {
     text-align: left;
 }
+#ledditor img, #figs img, #name img, #poverty img {
+    width: 100%;
+}
 /***** Ledditor *****/
 #ledditor {
     position: relative;
     background: #202020;
     color: white;
     overflow: hidden;
+    top: -8vh;
 }
 #ledditor .content-wrapper, #ledditor .title-block {
     padding: 5vh 0;
@@ -34,8 +38,8 @@
 #ledditor-photos img {
     margin: 2vh 0;
 }
-#ledditor img, #figs img, #name img, #poverty img {
-    width: 100%;
+#ledditor-photos img:first-child {
+    margin: 0;
 }
 #ledditor #letter {
     position: absolute;
@@ -55,17 +59,17 @@
 #ledditor #sig-2 {
     position: relative;
     left: 320px;
-    top: -30px;
+    top: -70px;
 }
 #ledditor #sig-3 {
     position: relative;
     left: 70px;
-    top: -50px;
+    top: -100px;
 }
 #ledditor #sig-4 {
     position: relative;
     left: 360px;
-    top: -100px;
+    top: -150px;
 }
 #ledditor .content {
     width: 70vw;
@@ -85,8 +89,11 @@
     position: absolute;
     top: 5%;
     left: -10%;
-    z-index: 1;
+    z-index: 0;
     border: 6px solid #fee94e;
+}
+#text {
+    margin: -10vh 0 0 0;    
 }
 #text .sub-text {
     position: relative;
@@ -119,6 +126,7 @@
 }
 .poverty-img {
     position: absolute;
+    z-index: 1;
     top: 0;
     height: 60vh;
     max-height: 800px;
@@ -173,39 +181,77 @@
 }
 /***** What's in a Name *****/
 #name {
+    position: relative;
     background: #65bc9d;
-    border-left: 10px solid white;
+    border-left: 12px solid white;
 }
 #name .title-block {
     margin-bottom: 5vh;
 }
-#name .header-image {
-    height: 500px;
-}
-#name .header-image img {
-    display: block;
-    height: auto;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 5vh 0;
-}
-#name .header-image #top-image {
+#name #top-image {
     transform: rotate(180deg);
     -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
 }
+#name #bott-image {
+    margin-bottom: -9px;
+}
+.header-image {
+    width: 40%;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+}
 #name .content-wrapper {
-    display: block;
+    position: relative;
+    z-index: 0;
     width: 90%;
     left: 10%;
     padding: 5vh 10vw 10vh 5vw;
     background-color: white;
 }
 #name .content {
+    position: relative;
+    z-index: 2;
     width: 60vw;
     margin: 0 auto;
-}
 
+}
+#name .kel-deco {
+    position: absolute;
+    z-index: 1;
+}
+#name #kel-gender {
+    width: 30vw;
+    transform: rotate(20deg);
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+}
+#name #kel-name {
+    width: 80vw;
+    left: 10vw;
+}
+#name [id^=star] {
+    width: 50px;
+}
+#name #star-1 {
+    left: 30vw;
+    transform: rotate(-80deg);
+    -ms-transform: rotate(-80deg); /* IE 9 */
+    -webkit-transform: rotate(-80deg); /* Chrome, Safari, Opera */
+}
+#name #star-2 {
+    right: 20vw;
+    transform: rotate(20deg);
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+}
+#name #star-3 {
+    right: 40vw;
+}
+#name #kel-gender {
+    right: 30vw;
+}
 /***** Media Queries *****/
 @media (max-width: 600px) {
 
@@ -223,23 +269,27 @@
     }
     #ledditor #sig-2 {
         position: relative;
-        left: 20vw;
-        top: -30px;
+        left: 25vw;
+        top: -60px;
     }
     #ledditor #sig-3 {
         position: relative;
         left: 5vw;
-        top: -50px;
+        top: -90px;
     }
     #ledditor #sig-4 {
         position: relative;
         left: 25vw;
-        top: -70px;
+        top: -110px;
     }
     #poverty .sub-text {
-        width: 80%;
+        width: 100%;
         top: 500px;
         margin: 0 auto;
+        background: none;
+    }
+    .poverty-img {
+        display: none;
     }
     #sub-1, #sub-2, #sub-3, #sub-4 {
         left: 0;
@@ -256,5 +306,8 @@
     }
     .fig-squiggle {
         opacity: .6;
+    }
+    #name .content {
+        width: 80vw;
     }
 }
