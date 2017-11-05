@@ -63,6 +63,44 @@
 }
 
 /********** TOC **********/
+/********** i-identify **********/
+
+#i-identify {
+  background-color: #231f20;
+  color: white;
+  padding: 30px;
+}
+
+#i-identify h1 {
+  font-size: 50px;
+}
+
+#i-identify h2 {
+  font-size: 30px;
+}
+
+#i-identify p {
+  max-width: 600px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+#i-identify img {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#i-identify .ud {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/********** i-identify **********/
 /********** OFF-WHITE **********/
 
 #off-white .container {
@@ -75,7 +113,6 @@
 
 #off-white h1 {
   text-align: left;
-  /*font-size: 70px;*/
 }
 
 #off-white h2 {
@@ -134,11 +171,13 @@
 }
 
 /********** queer-studies **********/
+/********** holidays **********/
 
 #holidays {
   background-color: black;
   border: 10px solid pink;
   color: #a0c5d9;
+  text-align: center;
 }
 
 #holidays .banner {
@@ -158,13 +197,280 @@
 }
 
 #holidays p {
+  display: inline-block;
+  text-align: left;
+}
+
+/********** holidays **********/
+/********** untitled **********/
+
+#untitled .inner-text {
+  display: inline-block;
+}
+
+#untitled h2 {
+  font-size: 30px;
+  margin: 50px 0;
+  text-align: left;
+}
+
+#untitled {
+  text-align: center;
+  background-image: url(../img/untitled.jpeg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: none;
+}
+
+#untitled p {
+  display: inline-block;
+  text-align: left;
+}
+
+/********** untitled **********/
+/********** tactile **********/
+
+#tactile-relief {
+  text-align: center;
+  padding: 50px 15px;
+}
+
+#tactile-relief .inner-text {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+#tactile-relief p {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  width: auto;
+}
+
+#tactile-relief .inner-text > * {
+  vertical-align:middle;
+}
+
+#tactile-relief .person {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+#tactile-relief .flower {
+  height: 100px;
+}
+
+#tactile-relief h1 {
+  font-size: 80px;
+}
+
+#tactile-relief h2 {
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
+/********** tactile **********/
+/********** addendum **********/
+
+#addendum {
+  background-image: url(../img/fabric.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 50px;
+}
+
+#addendum h1,
+#addendum h2 {
+  color: white;
+}
+
+#addendum .inner-text {
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#addendum .right {
+  text-align: right;
+}
+
+#addendum p {
+  display: inline-block;
+  text-align: left;
+
+  background-color: #efcdd2;
+  border: 20px white solid;
+  padding: 20px;
+
+  max-width: 700px;
+}
+
+@media (max-width: 600px) {
+  #addendum {
+    padding: 15px;
+  }
+
+  #addendum h1 {
+    font-size: 70px;
+  }
+
+  #addendum h2 {
+    font-size: 50px;
+  }
+}
+
+
+/********** addendum **********/
+/********** tribute **********/
+
+#tribute {
+  color: white;
+  text-align: center;
+
+  position: relative;
+
+  padding: 100px 0;
+
+  background-color: #757575;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23565b51' fill-opacity='1'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+#tribute h1 {
+  color: #f4ed3e;
+  font-size: 40px;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  right: calc(50% + (700px/2));
+  padding: 10px;
+}
+
+#tribute img {
+  position: absolute;
+  bottom: 100px;
+  left: calc(50% + 700px/2);
+  padding: 10px;
+  max-width: calc((100% - 700px)/2);
+}
+
+#tribute p {
+  margin: 0;
+}
+
+#tribute .inner-text {
+  text-align: left;
+  margin: 10px auto;
+  background-color: rgba(45, 45, 45, 0.5);
+  padding: 15px;
+  max-width: 700px;
+
+}
+
+@media (max-width: 1220px) {
+  #tribute img {
+    position: static;
+    max-width: 100%;
+    width: auto;
+  }
+
+  #tribute h1 {
+    display: block;
+    text-align: center;
+    position: static;
+  }
+
+  #tribute .hide {
+    display: none;
+  }
+
+}
+
+/********** tribute **********/
 /********** CREDITS **********/
+
+
+#credits {
+  background-image: url(../img/webcredits.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  color: white;
+  text-align: center;
+}
 
 #credits ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+}
+
+#credits li {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+#credits .bold {
+  font-weight: 700;
+}
+
+#credits h1 {
+  padding: 50px 0 20px;
+}
+
+#credits .filter {
+  background-color: rgba(0,0,0,.5);
+  padding: 20px;
+  border: 50px solid white;
+}
+
+@media (max-width: 600px) {
+  #credits .filter {
+    border: 20px solid white;
+  }
+
+  #credits h1 {
+    font-size: 50px;
+  }
+
+  #credits li {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
+/********** CREDITS **********/
+/********** CLOSING **********/
+
+#closing {
+  background-image: url(../img/return.jpg);
+  background-size: cover;
+  background-position: bottom center;
+
+  height: 100vh;
+
+
+  text-align: center;
+}
+
+#closing .vertically-center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#closing a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 100px;
+  color: white;
+  text-decoration: none;
+}
+
+#closing a:hover {
+  text-decoration: underline;
 }
