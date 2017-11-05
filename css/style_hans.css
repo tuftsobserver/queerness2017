@@ -93,7 +93,7 @@
     border: 6px solid #fee94e;
 }
 #text {
-    margin: -10vh 0 0 0;    
+    margin: -10vh 0 0 0;
 }
 #text .sub-text {
     position: relative;
@@ -183,7 +183,7 @@
 #name {
     position: relative;
     background: #65bc9d;
-    border-left: 12px solid white;
+    /*border-left: 12px solid white;*/
 }
 #name .title-block {
     margin-bottom: 5vh;
