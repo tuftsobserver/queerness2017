@@ -88,8 +88,8 @@ jQuery(document).ready(function($) {
         if (scrolled_name <=0) {scrolled_name = 0};
         if (scrolled_name > (name_height)) {scrolled_name = name_height};
         $('#star-1').animate({top: (star_1 - (scrolled_name * .4)) + 'px'}, 1);
-        $('#star-2').animate({top: (star_2 - (scrolled_name * .3)) + 'px'}, 1);
-        $('#star-3').animate({top: (star_3 - (scrolled_name * .2)) + 'px'}, 1);
+        $('#star-2').animate({top: (star_2 - (scrolled_name * .6)) + 'px'}, 1);
+        $('#star-3').animate({top: (star_3 - (scrolled_name * .4)) + 'px'}, 1);
         $('#kel-name').animate({top: (kel_names - (scrolled_name * .15)) + 'px'}, 1);
         $('#kel-gender').animate({top: (kel_gender - (scrolled_name * .1)) + 'px'}, 1);
     }
