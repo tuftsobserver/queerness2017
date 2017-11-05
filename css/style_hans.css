@@ -1,10 +1,3 @@
-/*.content-wrapper {
-    width: 100vw;
-    height: auto;
-
-    display: flex;
-    flex-flow: row nowrap;
-}*/
 .content-wrapper {
     position: relative;
     width: 100%;
@@ -21,8 +14,6 @@
     position: relative;
     background: #202020;
     color: white;
-    /*overflow: hidden;*/
-    /*padding: 5vh 0;*/
 }
 
 #ledditor .content-wrapper,
@@ -55,31 +46,6 @@
   max-height: 100%;
   width: auto;
 }
-/*#ledditor #signatures img {
-    width: 20vw;
-    max-width: 400px;
-    min-width: 150px;
-    height: auto;
-}*/
-/*#ledditor #sig-1 {
-    position: relative;
-    top: 20px;
-}
-#ledditor #sig-2 {
-    position: relative;
-    left: 320px;
-    top: -70px;
-}
-#ledditor #sig-3 {
-    position: relative;
-    left: 70px;
-    top: -100px;
-}
-#ledditor #sig-4 {
-    position: relative;
-    left: 360px;
-    top: -150px;
-}*/
 
 #ledditor .content {
     width: 70vw;
@@ -194,7 +160,6 @@
 #name {
     position: relative;
     background: #65bc9d;
-    /*border-left: 12px solid white;*/
 }
 #name .title-block {
     margin-bottom: 5vh;
@@ -217,7 +182,6 @@
     position: relative;
     z-index: 0;
     width: 90%;
-    /*left: 10%;*/
     padding: 5vh 10vw 10vh 5vw;
     background-color: white;
 }
@@ -274,25 +238,6 @@
         width: 100%;
         right: 0;
     }
-    /*#ledditor #sig-1 {
-        position: relative;
-        top: -20px;
-    }
-    #ledditor #sig-2 {
-        position: relative;
-        left: 25vw;
-        top: -60px;
-    }
-    #ledditor #sig-3 {
-        position: relative;
-        left: 5vw;
-        top: -90px;
-    }
-    #ledditor #sig-4 {
-        position: relative;
-        left: 25vw;
-        top: -110px;
-    }*/
     #poverty .sub-text {
         width: 100%;
         top: 500px;

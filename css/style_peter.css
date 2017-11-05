@@ -44,9 +44,6 @@
 		padding-top: 3%;
 		font-size: 5vh;
 	}
-	#poem .poem-body {
-		/*padding-bottom: 10%;*/
-	}
 
 	#poem .mobile-bg {
 		width: 80%;
@@ -230,12 +227,6 @@
 
 /*****************************/
 @media (min-width: 451px) {
-	#staff-project {
-		/*height: 300%;*/
-		/*border: 1px solid red;*/
-		/*padding-bottom: 50vh;*/
-	}
-
 	#staff-project .bg img{
 		display: none;
 	}
@@ -288,7 +279,7 @@
 		display: none;
 	}
 	#staff-project {
-		background:url(../img/staff-project-1.jpg) no-repeat, url(../img/staff-project-2.jpg) 600px repeat;
+		background:url(../img/toc.jpg) no-repeat, url(../img/staff-project-2.jpg) 600px repeat;
 		background-size: 100%, 200%;
 		color: white;
 	}
@@ -328,6 +319,10 @@
 		padding-bottom: 10vh;
 	}
 
+	#art h1 {
+		font-size: 60px;
+	}
+
 	#art .art-pictures {
 		background: url("../img/art-bg-d.png") no-repeat;
 		background-size: 100%;
@@ -363,6 +358,10 @@
 		background-size: 120%;
 	}
 
+	#art h1 {
+		font-size: 60px;
+	}
+
 	#art img {
 		width: 80%;
 	}
@@ -393,8 +392,14 @@
 		width: 50%;
 	}
 
-	#inset #text1 {
+	#inset #text1,
+	#inset #text2 {
 		margin-left: 25%;
+		margin-top: 20px;
+	}
+
+	#inset p {
+		text-align: center;
 	}
 
 	#inset .photo-overlays {
@@ -462,13 +467,11 @@
 	}
 
 	#inset #photo7 {
-		/*display: inline-block;*/
 		margin-left: 18%;
 		width: 25%;
 	}
 
 	#inset #photo8 {
-		/*display: inline-block;*/
 		margin-left: 6%;
 		width: 30%;
 	}

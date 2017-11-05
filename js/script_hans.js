@@ -51,7 +51,6 @@ jQuery(document).ready(function($) {
     var name_top = ($('#name').offset()).top;
 
     var name_height = $('#name').height();
-    console.log(name_height);
 
     var star_1 = name_height / 3;
     var star_2 = name_height - (name_height / 3);
