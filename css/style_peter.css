@@ -8,8 +8,9 @@
 	}
 
 	#poem .body-bg {
+		display: none;
 		position: absolute;
-		width: 100%;
+		
 		margin-top: 280%;
 		margin-left: 0;
 	}
@@ -45,12 +46,21 @@
 		font-size: 5vh;
 	}
 	#poem .poem-body {
-		padding-bottom: 10%;
+		/*padding-bottom: 10%;*/
+	}
+
+	#poem .mobile-bg {
+		width: 80%;
+		margin-left: 10%;
 	}
 	
 }
 
 @media (min-width: 451px) {
+
+	#poem .mobile-bg {
+		display: none;
+	}
 	#poem .poem-body p{
 		position: relative;
 		margin-left: 13vw;
