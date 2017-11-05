@@ -27,12 +27,7 @@
 /********** COVER **********/
 /********** TOC **********/
 
-#toc {
-  background-color: #f8f8f8;
-  background-image: url("../img/toc.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 #toc h1 {
   color: #ed028c;
@@ -286,7 +281,7 @@
 /********** addendum **********/
 
 #addendum {
-  background-image: url(../img/fabric.png);
+  background-image: url(../img/fabric.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 50px;
